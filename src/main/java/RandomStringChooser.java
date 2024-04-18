@@ -15,7 +15,8 @@ public class RandomStringChooser
     }
     int index = Math.random() * words.size();
     String temp = words.get(index);
-    return words.remove(index);
+    words.remove(index);
+    return temp;
   }
   //Heads up! 
   //You will get a very confusing error message until you have working code in part b as well
