@@ -13,12 +13,9 @@ public class RandomStringChooser
     if (words.size() == 0){
       return "NONE";
     }
-    else {
-      int index = Math.random() * words.size();
-      String temp = words.get(index);
-      words.remove(index);
-      return temp;
-    }
+    int index = Math.random() * words.size();
+    String temp = words.get(index);
+    return words.remove(index);
   }
   //Heads up! 
   //You will get a very confusing error message until you have working code in part b as well
