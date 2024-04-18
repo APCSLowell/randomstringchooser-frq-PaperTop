@@ -9,7 +9,7 @@ public class RandomStringChooser
       words.add(x[i]);
     }
   }
-  public getNext(){
+  public String getNext(){
     if (words.size() == 0){
       return "NONE";
     }
